@@ -312,7 +312,7 @@ $ sh start.bash
 
 ## Pruebas
 
-Se valida que owlvey esté ne funcionamiento realizando las siguientes pruebas.
+Se valida que owlvey esté en funcionamiento, realizando las siguientes pruebas:
 
 1. Colocar en el navegador web lo siguiente:
 
@@ -341,4 +341,4 @@ Password: 0wlv3y@
 
 ![](../images/owlvey_dashboard.png)
 
-5. Listo, puedes iniciar a trabajar cono Owlvey! :D
+5. Listo, puedes iniciar a trabajar con Owlvey! :D
