@@ -316,13 +316,29 @@ Se valida que owlvey esté ne funcionamiento realizando las siguientes pruebas.
 
 1. Colocar en el navegador web lo siguiente:
 
+```
 http://192.168.0.4:45000/
+```
 
 o con tu IP que tienes asignada por DHCP:
 
+```
 http://IP_ASIGNADA:45000/
+```
 
 2. Debes observar algo como:
 
 ![](../images/owlvey_browser_login.png)
 
+3. Ingresas los siguientes datos en los campos respectivos:
+
+```
+Email address: admin@owlvey.com
+Password: 0wlv3y@
+```
+
+4. Debes ver el dashboard:
+
+![](../images/owlvey_dashboard.png)
+
+5. Listo, puedes iniciar a trabajar cono Owlvey! :D
