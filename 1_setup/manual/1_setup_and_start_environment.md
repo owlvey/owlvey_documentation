@@ -1,11 +1,11 @@
-## Instalación y configuración de Docker 
+# Instalación y configuración de Docker 
 
 
 NOTA: Basado en Sistemas Operativos GNU/Linux Centos/RHEL 7.X
 
 
 
-# Desinstalación de antiguas versiones
+## Desinstalación de antiguas versiones
 
 Para esta configuración es bueno tener un espacio limpio de cualquier configuración previa de Docker; para esto lanzaremos el siguiente comando que nos ayudará a esta limpieza.
 
@@ -20,7 +20,7 @@ $ sudo yum remove docker \
                   docker-engine
 ```
 
-# 2. Instalación del motor de Docker
+## Instalación del motor de Docker
 
 2.1. Instalación desde el repositorio
 Una Instalación limpia de Docker desde el repositorio necesita que instalemos unos paquetes (yum-utils, yum-config-manager, device-mapper-persistent-data, lvm2) previos necesarios para un correcto funcionamiento de Docker
@@ -45,7 +45,7 @@ Por último, se procede a la instalación de Docker Engine:
 $ sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-## 2.2. Instalación manual
+## Instalación manual
 
 Si no se ha podido instalar desde el repositorio, es posible hacerlo desde la forma manual siguiendo las siguientes instrucciones:
 
@@ -55,7 +55,7 @@ Primero iremos al siguiente sitio: https://download.docker.com/linux/centos/7/x8
 $ sudo yum install /path/to/package.rpm
 ```
 
-## 2.3. Desinstalación de Docker Nginx
+## Desinstalación de Docker Nginx
 
 Para desinstalar Docker Engine, se procede con el siguiente comando:
 
@@ -292,12 +292,16 @@ NOTA:
 Y ahí  es en donde escribiremos los siguientes comandos teniendo en cuenta que OWLVEY_HOST debe tener la IP de la máquina en donde se están desplegando los contenedores
 ```
 
+```
 /usr//owlvey/owlvey_docker/start.bash
+```
+```
 #!/bin/bash
 export OWLVEY_HOST=192.168.0.4
 docker-compose down
 docker-compose pull
 docker-compose up -d
+```
 
 
 Y luego, se suben los contenedores desde el archivo ```start.bash```:
@@ -305,3 +309,18 @@ Y luego, se suben los contenedores desde el archivo ```start.bash```:
 ```
 $ sh start.bash
 ```
+
+## Pruebas
+
+Se valida que owlvey esté ne funcionamiento realizando las siguientes pruebas.
+
+1. Colocar en el navegador web lo siguiente:
+
+http://192.168.0.4:45000/
+
+o con tu IP que tienes asignada por DHCP:
+
+http://IP_ASIGNADA:45000/
+
+2. Debes observar algo como:
+
