@@ -324,5 +324,5 @@ http://IP_ASIGNADA:45000/
 
 2. Debes observar algo como:
 
-![](1_setup/images/owlvey_browser_login.png)
+![](../images/owlvey_browser_login.png)
 
